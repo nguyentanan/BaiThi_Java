@@ -1,1 +1,6 @@
 # BaiThi_Java
+Đây là kho dùng để lưu trữ app môn java
+
+Pikachu là một tựa game đã gắn liền với tuổi thơ của hầu hết chúng ta, với những con thú Pikachu ngộ nghĩnh bạn sẽ có những phút giây thư giãn, thoải mái sau những giờ làm việc căng thẳng, bên cạnh đó game Pikachu luôn nằm trong top bảng xếp hạng những game được yueeu thích nhất trên toàn thế giới. Đáp lại sự yêu thích đó, em cũng viết một game dựa trên nền tảng của Pikachu.
+
+Ở game Pikachu này người chơi có thể chọn 1 trong 3 giao diện hiển thị của icon để tránh trường hợp nhàm chán khi chỉ sử dụng đúng một bộ ảnh về Pikachu. Có 3 bộ ảnh hiển thị: 1. Bộ ảnh về các Pokemon với hình nền ban đầu là Pokemon. 2. Bộ ảnh về các thương hiệu nổi tiếng trên thế giới với hình nền ban đầu là các logo của thương hiệu. 3. Bộ ảnh về các tướng trong trò chơi Liên minh huyền thoại - một tựa game nổi tiếng hiện nay. Các chức năng của game hiện có là: 1. Lựa chọn bộ ảnh hiển thị. 2. Tính điểm: 2 điểm với một bộ ảnh ăn được, và điểm qua màn. 3. Hiển thị thời gian giảm dần ứng với thời gian chơi từ 300 giây về 0 giây. Nếu thời gian về 0 giây -> thua cuộc 4. Các chức năng tìm kiếm 1 cặp ăn được và hoán đổi bộ ảnh đang chơi. 5. Chức năng tạo mới khi đang chơi. 6. Chức năng qua màn khi chơi hết bộ ảnh. Nếu chơi hết màn -> thắng cuộc.
