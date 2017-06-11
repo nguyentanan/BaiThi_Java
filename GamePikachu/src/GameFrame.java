@@ -16,7 +16,7 @@ public class GameFrame extends JFrame implements ActionListener {
 	private final int covertF = 5;
 	private final int helpF = 5;
 	private final int leverminF = 1;		// mức độ chơi mặc định ban đầu
-	private final int levermaxF = 2;
+	private final int levermaxF = 5;
 	
 	public final int timeF = 300;			// thời gian chơi mặc định
 	
@@ -93,7 +93,7 @@ public class GameFrame extends JFrame implements ActionListener {
 		panelTime.setLayout(null);
 		panelTime.setBounds(10, 240, 150, 20);
 		mainpn.add(panelTime);
-		panelTime_.setBackground(Color.ORANGE);
+		panelTime_.setBackground(Color.BLUE);
 		panelTime_.setBounds(0, 0, 150, 20);
 		panelTime.add(panelTime_);
 		
@@ -133,6 +133,9 @@ public class GameFrame extends JFrame implements ActionListener {
 		if(time > -1)
 			time -= 1;
 		panelTime_.setBounds(0 - (timeF-time)/(timeF/150), 0, 150, 20);
+		if (time >= timeF * 4 / 6) panelTime_.setBackground(Color.BLUE);
+		else if(time < timeF * 4 / 6 && time > timeF * 1 / 6) panelTime_.setBackground(Color.ORANGE);
+		else if (time <= timeF *1 / 6) panelTime_.setBackground(Color.RED);
 	}
 	
 	// cập nhật lần đổi

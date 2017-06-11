@@ -13,7 +13,7 @@ class RunFrame extends Thread {
 		   while(true)
 		   {
 				try {
-					Thread.sleep(100);
+					Thread.sleep(1000);
 					gf.reducedTime();  // gọi hàm để thay đổi thời gian
 					if(gf.time == 0){
 						gf.Dispose();

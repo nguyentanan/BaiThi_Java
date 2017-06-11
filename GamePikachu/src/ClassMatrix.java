@@ -138,8 +138,7 @@ public class ClassMatrix{
 		while(!myQueue.isEmpty())
 		{
 			Point pp = new Point(-1,-1);
-			p = myQueue.peek();
-			myQueue.poll();// lấy và xóa 1 phần tử trong queue
+			p = myQueue.poll();// lấy và xóa 1 phần tử trong queue
 			x = p.getX();
 			y = p.getY();
 
@@ -147,7 +146,6 @@ public class ClassMatrix{
 			{
 				xx = x + dx[i];
 				yy = y + dy[i];
-				//if(checkMatrix[yy][xx] > 3) checkMatrix[yy][xx] = 0;
 				while(xx > -1 && xx < sizeMatrix+2 && yy > -1 && yy < sizeMatrix+2 && checkMatrix[yy][xx] == 0)
 				{
 					pp = new Point(xx,yy);
@@ -158,7 +156,7 @@ public class ClassMatrix{
 				}
 			}
 		}
-		if(checkMatrix[p2.getY()][p2.getX()] >= 1 && checkMatrix[p2.getY()][p2.getX()] <= 3) //kiếm tra số lần chuyển hướng 
+		if(checkMatrix[p2.getY()][p2.getX()] > 0 && checkMatrix[p2.getY()][p2.getX()] < 4) //kiếm tra số lần chuyển hướng 
 			return true;
 		return false;
 	}
