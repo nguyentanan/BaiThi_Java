@@ -16,7 +16,6 @@ class RunFrame extends Thread {
 					Thread.sleep(1000);
 					gf.reducedTime();  // gọi hàm để thay đổi thời gian
 					if(gf.time == 0){
-						gf.Dispose();
 						NotifyFrame fr = new NotifyFrame(gf, 1);
 						fr.Visible();
 					}
